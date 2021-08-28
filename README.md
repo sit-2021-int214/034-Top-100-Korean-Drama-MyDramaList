@@ -1,5 +1,5 @@
-# GroupID-Datasetname
-Datasets from: xxxxxxx
+# 034-Top-100-Korean-Drama-MyDramaList
+Datasets from: https://www.kaggle.com/chanoncharuchinda/top-100-korean-drama-mydramalist
 
 ## Objective
 
