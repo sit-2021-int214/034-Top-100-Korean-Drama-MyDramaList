@@ -9,7 +9,7 @@ Datasets from: https://www.kaggle.com/chanoncharuchinda/top-100-korean-drama-myd
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-### Team: แลคตาซอย เซเลกำมาทอย
+### Team: 034-แลคตาซอย เซเลกำมาทอย
 1. ชื่อ นาย ภัทรดนัย นามสกุล ดีรักษา StudentID: 63130500090
 2. ชื่อ นางสาว มณฑิรา  นามสกุล กองสันเทียะ StudentID: 63130500095
 3. ชื่อ นางสาว รดากรณ์  นามสกุล ทองวิไล StudentID: 63130500098
