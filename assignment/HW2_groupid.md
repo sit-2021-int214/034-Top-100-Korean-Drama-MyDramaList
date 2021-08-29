@@ -36,13 +36,14 @@ Descriptive statistics Statement
 และ na.rm คือการคำนวณโดยที่ไม่นับรวมกับคนที่ไม่ระบุ
 ```
 
-4)statement here
+4)จาก survey มีคนที่ออกกำลังกายประจำ 115 คน มีคนออกกำลังกายบ้าง 98 คน และคนที่ไม่เคยออกกำลังกาย 24 คน
 ```{R}
-Code here
+summary(survey$Exer)
 ```
 Descriptive statistics Statement
 ```{R}
-code here
+คำสั่ง summary(survey$Exer)
+เพื่อแสดงจำนวนนักเรียนที่ออกกำลังกายเป็นประจำ ออกกำลังกายบ้าง และไม่เคยออกกำลังกาย
 ```
 
 4)statement here
