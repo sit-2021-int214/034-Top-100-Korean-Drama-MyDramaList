@@ -7,9 +7,9 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 ```{R}
 summary(survey$Smoke)
 ```
-1.2)
+1.2) แมวตัวที่มีน้ำหนักมากที่สุดคือ 3.9 kg
 ```{R}
-
+max(cats$Bwt)
 ```
 Descriptive statistics Statement
 ```{R}
