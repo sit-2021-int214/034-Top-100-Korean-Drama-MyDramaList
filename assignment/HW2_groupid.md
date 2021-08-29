@@ -3,7 +3,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) ในจำนวนคนที่ถูก survey มีคนสูบบุหรี่ทั้งหมดกี่คน สูบบุหรี่หนักมากกี่คน สูบเป็นประจำทั้งหมดกี่คน สูบบ้างกี่คน
+1.) ในจำนวนคนที่ถูก survey มีคนสูบบุหรี่หนักมาก11คน สูบเป็นประจำทั้งหมด19คน สูบบ้าง17คน
 ```{R}
 summary(survey$Smoke)
 ```
