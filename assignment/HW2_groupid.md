@@ -3,18 +3,25 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) ในจำนวนคนที่ถูก survey มีคนสูบบุหรี่หนักมาก11คน สูบเป็นประจำทั้งหมด19คน สูบบ้าง17คน
+1.1) ในจำนวนคนที่ถูก survey มีคนสูบบุหรี่หนักมาก11คน สูบเป็นประจำทั้งหมด19คน สูบบ้าง17คน
 ```{R}
 summary(survey$Smoke)
 ```
-
+1.2)แมวตัวที่น้ำหนักมากที่สุด หนัก 20.5 kg
+```{R}
+max(cats$Hwt)
+```
 Descriptive statistics Statement
 ```{R}
 คำสั่ง summary(survey$Smoke)
 เพื่อให้แสดงผลลัพธ์ว่ามีคนจำนวนเท่าไหร่ที่สูบบุหรี่หนัก สูบเป็นประจำ และ สูบบ้าง
 ```
 
-2.) ใส่คำถามเลย
+2.1) ใส่คำถามเลย
+```{R}
+Code here
+```
+2.2)แมวตัวที่น้ำหนักมากที่สุดมีน้ำหนักเท่าไหร่
 ```{R}
 Code here
 ```
