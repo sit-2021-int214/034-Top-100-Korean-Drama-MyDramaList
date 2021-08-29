@@ -10,12 +10,13 @@ summary(survey$Smoke)
 
 Descriptive statistics Statement
 ```{R}
-Code here
+คำสั่ง summary(survey$Smoke)
+เพื่อให้แสดงผลลัพธ์ว่ามีคนจำนวนเท่าไหร่ที่สูบบุหรี่หนัก สูบเป็นประจำ และ สูบบ้าง
 ```
 
 2.) ใส่คำถามเลย
 ```{R}
-summary(survey$Smoke)
+Code here
 ```
 
 Descriptive statistics Statement
