@@ -8,11 +8,20 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 summary(survey$Smoke)
 ```
 
-2.) Descriptive statistics Statement
+Descriptive statistics Statement
 ```{R}
 Code here
 ```
 
+2.) ใส่คำถามเลย
+```{R}
+summary(survey$Smoke)
+```
+
+Descriptive statistics Statement
+```{R}
+Code here
+```
 
 ### Team: 034-แลคตาซอย เซเลกำมาทอย
 1. ชื่อ นาย ภัทรดนัย นามสกุล ดีรักษา StudentID: 63130500090
