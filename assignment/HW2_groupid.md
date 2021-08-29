@@ -7,7 +7,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 ```{R}
 summary(survey$Smoke)
 ```
-1.2)แมวตัวที่น้ำหนักมากที่สุด 
+1.2)
 ```{R}
 
 ```
