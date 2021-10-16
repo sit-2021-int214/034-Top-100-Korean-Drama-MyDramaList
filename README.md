@@ -28,8 +28,8 @@ This dataset about ranking top 100 of Korean drama which collected from 2003 - 2
 ## Steps
 
 ## Tools
-R Studio
-Google Studio
+- R Studio
+- Google Studio
 
 ## Table of Contents
 
