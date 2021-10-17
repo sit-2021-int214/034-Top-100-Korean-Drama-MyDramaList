@@ -1,7 +1,7 @@
 # 034-Top-100-Korean-Drama-MyDramaList
 Datasets from: https://www.kaggle.com/chanoncharuchinda/top-100-korean-drama-mydramalist
 
-##About's Top100 Korean Drama
+## About's Top100 Korean Drama
 This dataset about ranking top 100 of Korean drama which collected from 2003 - 2021 that given by the users on the website "mydramalist.com", "MyDramaList.com is a community-based project which provides Asian drama & movie fans". On the website, fans can create their very own drama watchlists, rate dramas and films, write reviews and many more engaging activities.
 ### Contents
 1. Rank: Ranking on the website****move,change type to int
