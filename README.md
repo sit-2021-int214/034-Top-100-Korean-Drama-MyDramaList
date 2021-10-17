@@ -5,17 +5,17 @@ Datasets from: https://www.kaggle.com/chanoncharuchinda/top-100-korean-drama-myd
 This dataset about ranking top 100 of Korean drama which collected from 2003 - 2021 that given by the users on the website "mydramalist.com", "MyDramaList.com is a community-based project which provides Asian drama & movie fans". On the website, fans can create their very own drama watchlists, rate dramas and films, write reviews and many more engaging activities.
 
 ### Contents
-1. Rank: Ranking on the website
-2. Name: Korean Drama name
-3. Year of release: Release year of the drama
-4. Rating: Rating by the users on the website out of ten
-5. Aired On: Aired on what day(s) of the week
-6. Number of Episode: How many episodes are there
-7. Network: What Network is the drama aired on
-8. Duration: How long is one episode approximately
-9. Content Rating: Content rate for appropriate audience
-10. Cast: Actors and Actresses in the drama
-11. Type of Drama : Type the drama is listed in
+1. ```Rank```: Ranking on the website
+2. ```Name```: Korean Drama name
+3. ```Year of release```: Release year of the drama
+4. ```Rating```: Rating by the users on the website out of ten
+5. ```Aired On```: Aired on what day(s) of the week
+6. ```Number of Episode```: How many episodes are there
+7. ```Network```: What Network is the drama aired on
+8. ```Duration```: How long is one episode approximately
+9. ```Content Rating```: Content rate for appropriate audience
+10. ```Cast```: Actors and Actresses in the drama
+11. ```Type of Drama``` : Type the drama is listed in
 
 ## Overview
   เป็นการวิเคราะห์ข้อมูลเชิงสถิติเกี่ยวกับ Korean Drama ที่ถูกจัดอันดับ 100 เรื่องในปี 2003 ถึงปี 2021 โดยเป็นการวิเคราะห์ข้อมูลเกี่ยวกับกระแสนิยมของซีรีย์ที่ติดอันดับและประเภทของซีรีย์ที่ติดอันดับทั้งยังมีการวิเคราะห์ข้อมูลการจัดอันดับช่องทางการเผยแพร่เป็นวิเคราะห์สถิติในการปล่อยซีรีย์ในแต่ละปี โดยใช้โปรแกรม R Studio เพื่อนำมาทำความสะอาดและวิเคราะห์ด้วยภาษา R และใช้เครื่องมือ Google Studio ในการทำ Dashboard ของข้อมูล นอกจากนี้ได้มีการวิเคราะห์เพื่อหาความสัมพันธ์ของข้อมูลและตั้งสมมุติฐาน
