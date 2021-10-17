@@ -9,7 +9,7 @@
 1. Loading Library and dataset
 2. Explore the dataset
 
-## Loading library and dataset
+### Loading library and dataset
 ```
 # Install package(for first time)
 install.packages("dplyr")
@@ -24,7 +24,7 @@ library(stringr)
 # Dataset
 kdrama <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/034-Top-100-Korean-Drama-MyDramaList/main/top100_kdrama.csv")
 ```
-## Explore the dataset
+### Explore the dataset
 ```
 # Explore the data set
 View(kdrama) 
@@ -56,7 +56,40 @@ glimpse(kdrama)
 ```
 
 ## 2.2 Cleaning and Transformation dataset
-### Step 1 : 
+### Step 1 : Ranking on the website move and change type to int and move Rating after Year.of.release 
+```
+# Remove "#" then trim for remove a whitespace and change type charater to numeric 
+kdrama$Rank <- kdrama$Rank %>% str_remove("#") %>% str_trim() %>% as.numeric()
+# Check type 
+is.numeric(kdrama$Rank)
+# Relocate colum Rank to first column then assign to kdrama 
+kdrama <- kdrama %>% relocate(Rank,.before=Name)
+# Relocate colum Rank to fourth column then assign to kdrama 
+kdrama <- kdrama %>% relocate(Rating,.after = Year.of.release)
+```
+### Step 2 : Delete Aired Date because Aired Date it unnecessary for our analyze..
+```
+# Delete column Aired.Date 
+kdrama <- kdrama %>% select(-Aired.Date)
+```
+### Step 3 : Network cleaning (remove duplicate data)
+```
+
+```
+### Step 4 : Delete Synopsis (Short story of the drama) and Tags because it unnecessary for our analyze.
+```
+# Delete column Synopsis
+kdrama <- kdrama %>% select(-Synopsis)
+# Delete column Tags
+kdrama <- kdrama %>% select(-Tags)
+```
+### Step 5 : Rename column Genre to Type.of.drama for easier understanding.
+```
+# Rename column Genre to Type.of.drama
+kdrama <- kdrama %>% rename(Type.of.drama = Genre)
+```
+
+
 
 
 
