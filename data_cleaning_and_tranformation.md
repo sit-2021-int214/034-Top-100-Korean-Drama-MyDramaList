@@ -16,11 +16,13 @@
 install.packages("dplyr")
 install.packages("readr")
 install.packages("stringr")
+install.packages("tidyr")
 
 # Library
 library(dplyr)
 library(readr)
 library(stringr)
+library(tidyr)
 
 # Dataset
 kdrama <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/034-Top-100-Korean-Drama-MyDramaList/main/top100_kdrama.csv")
