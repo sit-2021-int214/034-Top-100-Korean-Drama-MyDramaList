@@ -34,7 +34,7 @@ View(kdrama)
 # or
 glimpse(kdrama)
 ```
-result
+#### Result :
 ```
 Rows: 100
 Columns: 14
@@ -95,7 +95,7 @@ kdrama <- kdrama %>% select(-Aired.Date)
 ```
 ### Step 3 : Network cleaning (remove duplicate data)
 ```
-
+# Cleaning data with Excel to distinct the infromation.
 ```
 ### Step 4 : Delete Synopsis (Short story of the drama) and Tags because it unnecessary for our analyze.
 ```
