@@ -34,7 +34,25 @@ View(kdrama)
 # or
 glimpse(kdrama)
 ```
-
+result
+```
+Rows: 100
+Columns: 14
+$ Name              <chr> "Move to Heaven", "Hospital Playlist", "Flower of Evil", ~
+$ Year.of.release   <int> 2021, 2020, 2020, 2018, 2017, 2020, 2015, 2016, 2021, 202~
+$ Aired.Date        <chr> "May 14, 2021", "Mar 12, 2020 - May 28, 2020", "Jul 29, 2~
+$ Aired.On          <chr> " Friday", " Thursday", " Wednesday, Thursday", " Wednesd~
+$ Number.of.Episode <int> 10, 12, 16, 16, 16, 16, 20, 16, 12, 20, 16, 20, 20, 16, 6~
+$ Network           <chr> "Netflix,  Netflix,  Netflix,  Netflix ", "tvN,  Netflix,~
+$ Duration          <chr> "52 min.", "1 hr. 30 min.", "1 hr. 10 min.", "1 hr. 17 mi~
+$ Content.Rating    <chr> "18+ Restricted (violence & profanity) ", "15+ - Teens 15~
+$ Synopsis          <chr> "Geu Roo is a young autistic man. He works for his father~
+$ Cast              <chr> "Lee Je Hoon, Tang Jun Sang, Hong Seung Hee, Jung Suk Yon~
+$ Genre             <chr> "Life,  Drama,  Family ", "Friendship,  Romance,  Life,  ~
+$ Tags              <chr> "Autism, Father-Son Relationship, Uncle-Nephew Relationsh~
+$ Rank              <chr> "#1", "#2", "#3", "#4", "#5", "#6", "#7", "#8", "#9", "#1~
+$ Rating            <dbl> 9.2, 9.1, 9.1, 9.1, 9.1, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.~
+```
 ## 2. Cleaning and Transformation dataset
 ### Our Steps 
 1. Design and analyze to cleaning dataset
