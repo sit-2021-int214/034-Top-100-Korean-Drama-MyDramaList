@@ -38,9 +38,10 @@ This dataset about ranking top 100 of Korean drama which collected from 2003 - 2
 - [Data Visualization]()
 
 ## Resources
-- [code_EDA.R]() : Data Cleaning and Data Transformation
-- [data_analysis]() : Data Analysis with Descriptive Statistics
 - [top100_kdrama.csv](./top100_kdrama.csv) : Original Dataset
+- [code_EDA.R](./code_EDA.R) : Data Cleaning and Data Transformation
+- [top100_kdrama_clean_AirOn_network.csv](./top100_kdrama_clean_AirOn_network.csv) : Already cleaning Dataset
+- [data_analysis.R]() : Data Analysis with Descriptive Statistics
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
