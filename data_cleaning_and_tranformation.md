@@ -60,20 +60,20 @@ $ Rating            <dbl> 9.2, 9.1, 9.1, 9.1, 9.1, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0,
 
 ## 2.1 Design and analyze to cleaning dataset
 ```
-1. Rank: Ranking on the website****move to 1st,change type to int
+1. Rank: Ranking on the website ****move to 1st,change type to int
 2. Name: Korean Drama name
-3. Year of release: Release year of the drama****graph
-4. Aired Date: Aired Date (start) - (end)****delete
-5. Aired On: Aired on what day(s) of the week
-6. Number of Episode: How many episodes are there****graph
-7. Network: What Network is the drama aired on****cleaning
+3. Year of release: Release year of the drama ****graph
+4. Aired Date: Aired Date (start) - (end) ****delete
+5. Aired On: Aired on what day(s) of the week ****cleaning by excel
+6. Number of Episode: How many episodes are there ****graph
+7. Network: What Network is the drama aired on ****cleaning by excel
 8. Duration: How long is one episode approximately
 9. Content Rating: Content rate for appropriate audience
-10. Synopsis: Short story of the drama****delete
+10. Synopsis: Short story of the drama ****delete
 11. Cast: Actors and Actresses in the drama
-12. Genre: Type the drama is listed in****cleaning(change columnName)
-13. Tags: Tags that the drama is listed in****delete
-14. Rating: Rating by the users on the website out of ten****move to 4th
+12. Genre: Type the drama is listed in ****cleaning(change columnName)
+13. Tags: Tags that the drama is listed in ****delete
+14. Rating: Rating by the users on the website out of ten ****move to 4th
 ```
 
 ## 2.2 Cleaning and Transformation dataset
