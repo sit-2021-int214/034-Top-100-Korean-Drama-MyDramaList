@@ -65,9 +65,9 @@ glimpse(kdrama)
 kdrama$Rank <- kdrama$Rank %>% str_remove("#") %>% str_trim() %>% as.numeric()
 # Check type 
 is.numeric(kdrama$Rank)
-# Relocate colum Rank to first column then assign to kdrama 
+# Relocate column Rank to first column then assign to kdrama 
 kdrama <- kdrama %>% relocate(Rank,.before=Name)
-# Relocate colum Rank to fourth column then assign to kdrama 
+# Relocate column Rank to fourth column then assign to kdrama 
 kdrama <- kdrama %>% relocate(Rating,.after = Year.of.release)
 ```
 ### Step 2 : Delete Aired Date because Aired Date it unnecessary for our analyze..
