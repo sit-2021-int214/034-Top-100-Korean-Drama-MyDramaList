@@ -1,6 +1,8 @@
 # 034-Top-100-Korean-Drama-MyDramaList
 Datasets from: https://www.kaggle.com/chanoncharuchinda/top-100-korean-drama-mydramalist
 
+![image](https://i.pinimg.com/originals/fa/4b/87/fa4b87e6717efec7d4fe4fa1d77da506.jpg)
+
 ## About's Top100 Korean Drama
 This dataset about ranking top 100 of Korean drama which collected from 2003 - 2021 that given by the users on the website "mydramalist.com", "MyDramaList.com is a community-based project which provides Asian drama & movie fans". On the website, fans can create their very own drama watchlists, rate dramas and films, write reviews and many more engaging activities.
 
@@ -38,9 +40,10 @@ This dataset about ranking top 100 of Korean drama which collected from 2003 - 2
 - [Data Visualization]()
 
 ## Resources
-- [code_EDA.R]() : Data Cleaning and Data Transformation
-- [data_analysis]() : Data Analysis with Descriptive Statistics
 - [top100_kdrama.csv](./top100_kdrama.csv) : Original Dataset
+- [code_EDA.R](./code_EDA.R) : Data Cleaning and Data Transformation
+- [top100_kdrama_clean_AirOn_network.csv](./top100_kdrama_clean_AirOn_network.csv) : Already cleaning Dataset
+- [data_analysis.R]() : Data Analysis with Descriptive Statistics
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
