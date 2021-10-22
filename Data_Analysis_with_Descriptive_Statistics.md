@@ -86,11 +86,12 @@ Descriptive statistics Statement
 new_kdrama <- kdrama %>% mutate(
   Content.Rating= lapply(Content.Rating,gsub,pattern = " ",replacement = ""))
 new_kdrama %>% select(Name,Content.Rating,Year.of.release,Rating) %>% filter(Content.Rating == "18+Restricted(violence&profanity)")
-
 ```
 Descriptive statistics Statement
 ```{R}
-เป็นการหาว่ามีซีรี่ย์เรื่องใดที่มีเนื้อหารุนแรงเหมาะกับอายุ 18ปีขึ้นไป โดยมีการใช้ new_kdrama <- kdrama เพื่อจำลองทุกอย่างของ kdrama ลงใน new_kdrama , ใช้ mutateเพื่อเพิ่มค่าตัวแปรใหม่ของ คำสั่ง lapply(Content.Rating,gsub,pattern = " ",replacement = "")) ที่ทำให้ข้อมูลในคอลัมContent.Ratingแยกกันตรงเครื่องหมาย “,” จากนั้นใช้ selectเพื่อแสดงชื่อและContent.Ratin โดยมีfilterเลือกเนื้อหา18+Restricted(violence&profanity) เฉพาะ
+เป็นการหาว่ามีซีรี่ย์เรื่องใดที่มีเนื้อหารุนแรงเหมาะกับอายุ 18ปีขึ้นไป โดยมีการใช้ new_kdrama <- kdrama เพื่อจำลองทุกอย่างของ kdrama ลงใน new_kdrama , ใช้ mutateเพื่อเพิ่มค่าตัวแปรใหม่ของ 
+คำสั่ง lapply(Content.Rating,gsub,pattern = " ",replacement = "")) ที่ทำให้ข้อมูลในคอลัมContent.Ratingแยกกันตรงเครื่องหมาย “,” จากนั้นใช้ selectเพื่อแสดงชื่อและContent.Ratin 
+โดยมีfilterเลือกเนื้อหา18+Restricted(violence&profanity) เฉพาะ
 ```
 
 ### 6)จากการอ้างอิงซีรีย์ที่มีcontent 18+ ในปี2020ที่ใกล้เคียงปัจจุบันที่สุดที่จะวัดได้ พบว่า ซีรีย์แนวนี้เป็นซีรีย์ที่ค่อนข้างมาแรง โดยมีค่าเฉลี่ยของเรตติ้งที่ค่อนข้างสูงอยู่ที่ 8.675 
