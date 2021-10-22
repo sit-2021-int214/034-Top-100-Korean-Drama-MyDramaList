@@ -1,6 +1,6 @@
 # Data Analysis With Descriptive Statistics
 
-### From Top 100 Korean Drama Dataset
+## From Top 100 Korean Drama Dataset
 
 1) 
 ```{R}
