@@ -62,11 +62,11 @@ $ Rating            <dbl> 9.2, 9.1, 9.1, 9.1, 9.1, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0,
 ```
 1. Rank: Ranking on the website ****move to 1st,change type to int
 2. Name: Korean Drama name
-3. Year of release: Release year of the drama ****graph
+3. Year of release: Release year of the drama 
 4. Aired Date: Aired Date (start) - (end) ****delete
-5. Aired On: Aired on what day(s) of the week ****cleaning by excel
-6. Number of Episode: How many episodes are there ****graph
-7. Network: What Network is the drama aired on ****cleaning by excel
+5. Aired On: Aired on what day(s) of the week ****cleaning by excel (trim)
+6. Number of Episode: How many episodes are there 
+7. Network: What Network is the drama aired on ****cleaning by excel (distinct a data)
 8. Duration: How long is one episode approximately
 9. Content Rating: Content rate for appropriate audience
 10. Synopsis: Short story of the drama ****delete
@@ -77,7 +77,7 @@ $ Rating            <dbl> 9.2, 9.1, 9.1, 9.1, 9.1, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0,
 ```
 
 ## 2.2 Cleaning and Transformation dataset
-### Step 1 : Ranking on the website move and change type to int and move Rating after Year.of.release 
+### Step 1 : Change ```Ranking``` by move to 1st column and change type to int and move ```Rating``` after column ```Year.of.release```(4th).
 ```
 # Remove "#" then trim for remove a whitespace and change type charater to numeric 
 kdrama$Rank <- kdrama$Rank %>% str_remove("#") %>% str_trim() %>% as.numeric()
@@ -88,23 +88,23 @@ kdrama <- kdrama %>% relocate(Rank,.before=Name)
 # Relocate column Rank to fourth column then assign to kdrama 
 kdrama <- kdrama %>% relocate(Rating,.after = Year.of.release)
 ```
-### Step 2 : Delete Aired Date because Aired Date it unnecessary for our analyze..
+### Step 2 : Delete ```Aired Date``` because Aired Date it's unnecessary for our analyze.
 ```
 # Delete column Aired.Date 
 kdrama <- kdrama %>% select(-Aired.Date)
 ```
-### Step 3 : Network cleaning (remove duplicate data)
+### Step 3 : ```Aired on``` and ```Network``` cleaning (remove duplicate data and trim a data)
 ```
 # Cleaning data with Excel to distinct the infromation.
 ```
-### Step 4 : Delete Synopsis (Short story of the drama) and Tags because it unnecessary for our analyze.
+### Step 4 : Delete ```Synopsis``` (Short story of the drama) and ```Tags``` because it's unnecessary for our analyze.
 ```
 # Delete column Synopsis
 kdrama <- kdrama %>% select(-Synopsis)
 # Delete column Tags
 kdrama <- kdrama %>% select(-Tags)
 ```
-### Step 5 : Rename column Genre to Type.of.drama for easier understanding.
+### Step 5 : Rename column ```Genre``` to ```Type.of.drama``` for easier understanding.
 ```
 # Rename column Genre to Type.of.drama
 kdrama <- kdrama %>% rename(Type.of.drama = Genre)
