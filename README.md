@@ -36,7 +36,7 @@ This dataset about ranking top 100 of Korean drama which collected from 2003 - 2
 
 ## Table of Contents
 - [Data Cleaning and Data Transformation](data_cleaning_and_tranformation.md)
-- [Data Analysis with Descriptive Statistics]()
+- [Data Analysis with Descriptive Statistics](Data_Analysis_with_Descriptive_Statistics.md)
 - [Data Visualization]()
 
 ## Resources
