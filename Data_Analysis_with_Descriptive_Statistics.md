@@ -1,6 +1,6 @@
 # Data Analysis With Descriptive Statistics
 
-## From Top 100 Korean Drama Dataset
+## [From Top 100 Korean Drama Dataset](./top100_kdrama_clean_AirOn_network.csv)
 
 ### 1) ในแต่ละปีมีซีรี่ย์ออกอากาศมากมาย แต่ปี2020กลับเป็นปีที่มีซีรี่ย์กว่า 20 เรื่องที่ติด top 100
 
