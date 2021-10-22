@@ -2,21 +2,21 @@
 
 ## From Top 100 Korean Drama Dataset
 
-1) 
+1) ในแต่ละปีมีซีรี่ย์ออกอาศมากมาย แต่ปี2020กลับเป็นปีที่มีซีรี่ย์กว่า 20 เรื่องที่ติด top 100
 ```{R}
 kdrama %>% select(Year.of.release) %>% count(Year.of.release)%>% arrange(desc(n)) %>% head(1)
 ```
 Descriptive statistics Statement
 ```{R}
----
+เป็นการหาว่าปีใดที่มีซีรี่ย์ติดtop 100 มากที่สุดและจำนวนเรื่อง โดยใช้ select 	เลือกปีที่ฉาย countเพื่อนับจำนวนซีรี่ย์แต่ละปี และ arrange เรียงจำนวนเรื่องจากมากไปน้อย และ head(1)เพื่อเลือกปีซึ่งมีจำนวนซีรี่ย์มากที่สุดซึ่งจะอยู่บนสุด
 ```
-2) 
+2) รู้หรือไม่ จำนวนตอนของซีรี่ย์เกาหลีแต่ละเรื่องไม่เท่ากัน โดยมีค่าเฉลี่ยอยู่ที่ 19.53 ตอน
 ```{R}
 kdrama$Number.of.Episode %>% mean()
 ```
 Descriptive statistics Statement
 ```{R}
------
+เป็นการหาค่าเฉลี่ยว่าซีรี่ย์มีกี่ตอน โดยใช้ mean()เพื่อหาค่าเฉลี่ย
 ```
 
 3) 
@@ -38,7 +38,7 @@ Descriptive statistics Statement
 ------
 ```
 
-5)
+5)ซีรี่ย์เกาหลีส่วนใหญ่จะผลิตเนื้อหาสำหรับผู้ชมที่มีอายุ15ปีขึ้นไปแต่ยังมีซีรี่ย์ที่มีเนื้อหารุนแรงเหมาะสำหรับอายุ18ปีได้แก่ Move to Heaven,Kingdom,Sweet Home,The Guest,Taxi Driver,Mouse,Bad Guys,The World of the Married,Extracurricular
 ```{R}
 new_kdrama <- kdrama %>% mutate(
   Content.Rating= lapply(Content.Rating,gsub,pattern = " ",replacement = ""))
@@ -47,7 +47,7 @@ new_kdrama %>% select(Name,Content.Rating,Year.of.release,Rating) %>% filter(Con
 ```
 Descriptive statistics Statement
 ```{R}
-----
+เป็นการหาว่ามีซีรี่ย์เรื่องใดที่มีเนื้อหารุนแรงเหมาะกับอายุ 18ปีขึ้นไป โดยมีการใช้ new_kdrama <- kdrama เพื่อจำลองทุกอย่างของ kdrama ลงใน new_kdrama , ใช้ mutateเพื่อเพิ่มค่าตัวแปรใหม่ของ คำสั่ง lapply(Content.Rating,gsub,pattern = " ",replacement = "")) ที่ทำให้ข้อมูลในคอลัมContent.Ratingแยกกันตรงเครื่องหมาย “,” จากนั้นใช้ selectเพื่อแสดงชื่อและContent.Ratin โดยมีfilterเลือกเนื้อหา18+Restricted(violence&profanity) เฉพาะ
 ```
 
 6)
@@ -114,7 +114,7 @@ Descriptive statistics Statement
 ----
 ```
 
-13)
+13) Friday night กับซีรี่ย์ที่ออกอากาศวันศุกร์
 ```{R}
 new_kdrama <- kdrama %>% mutate(Aired.On = strsplit(Aired.On,","),
                                 Aired.On = lapply(Aired.On,gsub,pattern = " ",replacement = ""),
@@ -126,7 +126,8 @@ new_kdrama  %>% select(Name,Aired.On) %>% filter(Aired.On == "friday")
 ```
 Descriptive statistics Statement
 ```{R}
-----
+เป็นการหาซีรี่ย์ที่ออกอากาศเฉพาะวันศุกร์ โดยมีการใช้ new_kdrama <- kdrama เพื่อจำลองทุกอย่างของ kdrama ลงใน new_kdrama , ใช้ mutateเพื่อเพิ่มค่าตัวแปรใหม่ของ คำสั่ง strsplit(Aired.On,”,”) ที่ทำให้ข้อมูลในคอลัมAired.Onแยกกันตรงเครื่องหมาย “,” และ lapply(Aired.On,gsub,pattern = " ",replacement = "") เป็นการตัดช่องว่างของคำ และ Aired.On = lapply(Aired.On,tolower) ทำให้ทุกตัวอักษรในคอลัมเป็นตัวพิมพ์เล็ก จากนั้นใช้selectเลือกข้อมูลในAired.Onและunnest(Aired.On)เพื่อเรียงข้อมูลเป็นแถวเดี่ยว แล้วช้selectเลือกชื่อเรื่องและข้อมูลในAired.Onโดยใช้filterแยกวันออกอากาศเป็นfridayเท่านั้น
+
 ```
 
 14)
