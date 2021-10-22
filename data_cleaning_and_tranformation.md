@@ -88,7 +88,7 @@ kdrama <- kdrama %>% relocate(Rank,.before=Name)
 # Relocate column Rank to fourth column then assign to kdrama 
 kdrama <- kdrama %>% relocate(Rating,.after = Year.of.release)
 ```
-### Step 2 : Delete ```Aired Date``` because Aired Date it's unnecessary for our analyze.
+### Step 2 : Delete ```Aired Date``` because Aired Date is unnecessary for our analyze.
 ```
 # Delete column Aired.Date 
 kdrama <- kdrama %>% select(-Aired.Date)
