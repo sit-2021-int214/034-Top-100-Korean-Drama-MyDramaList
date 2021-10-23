@@ -31,3 +31,9 @@ word(mystring,3)
 word(mystring,-1:-2)
 #[1] "Tle"      "Deeruksa"
 word()
+
+#1.Find the customer name that bought the state Kentucky.
+Kentucky <- superstore %>% filter(superstore$State == "Kentucky" )
+Kentucky %>% distinct(Kentucky$Customer.Name)
+
+
