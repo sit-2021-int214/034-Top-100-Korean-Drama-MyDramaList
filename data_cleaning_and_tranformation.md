@@ -59,22 +59,22 @@ $ Rating            <dbl> 9.2, 9.1, 9.1, 9.1, 9.1, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0,
 2. Cleaning and Transformation dataset
 
 ## 2.1 Design and analyze to cleaning dataset
-```
-1. Rank: Ranking on the website ****move to 1st,change type to int
-2. Name: Korean Drama name
-3. Year of release: Release year of the drama 
-4. Aired Date: Aired Date (start) - (end) ****delete
-5. Aired On: Aired on what day(s) of the week ****cleaning by excel (trim)
-6. Number of Episode: How many episodes are there 
-7. Network: What Network is the drama aired on ****cleaning by excel (distinct a data)
-8. Duration: How long is one episode approximately
-9. Content Rating: Content rate for appropriate audience
-10. Synopsis: Short story of the drama ****delete
-11. Cast: Actors and Actresses in the drama
-12. Genre: Type the drama is listed in ****cleaning(change columnName)
-13. Tags: Tags that the drama is listed in ****delete
-14. Rating: Rating by the users on the website out of ten ****move to 4th
-```
+
+1. ```Rank```: Ranking on the website ```****move to 1st,change type to int```
+2. ```Name```: Korean Drama name
+3. ```Year of release```: Release year of the drama 
+4. ```Aired Date```: Aired Date (start) - (end) ```****delete```
+5. ```Aired On```: Aired on what day(s) of the week ```****cleaning by excel (trim)```
+6. ```Number of Episode```: How many episodes are there 
+7. ```Network```: What Network is the drama aired on ```****cleaning by excel (distinct a data)```
+8. ```Duration```: How long is one episode approximately
+9. ```Content Rating```: Content rate for appropriate audience
+10. ```Synopsis```: Short story of the drama ```****delete```
+11. ```Cast```: Actors and Actresses in the drama
+12. ```Genre```: Type the drama is listed in ```****cleaning(change columnName)```
+13. ```Tags```: Tags that the drama is listed in ```****delete```
+14. ```Rating```: Rating by the users on the website out of ten ```****move to 4th```
+
 
 ## 2.2 Cleaning and Transformation dataset
 ### Step 1 : Change ```Ranking``` by move to 1st column and change type to int and move ```Rating``` after column ```Year.of.release```(4th).
