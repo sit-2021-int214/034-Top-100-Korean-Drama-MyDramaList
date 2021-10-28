@@ -57,3 +57,27 @@ superstore %>% group_by(City) %>% summarise(sum(Sales)) %>% rename(Total_Amount 
 
 #6.Unique search for the first 10 customer names.
 superstore %>% distinct(Customer.Name) %>% head(10)
+
+
+#part GGplot
+#1
+bar_plot <- ggplot(superstore,aes(x=Category)) + geom_bar(color="skyblue",fill="green",alpha=0.5)
+bar_plot
+
+# Adding component
+bar_plot + ggtitle("Number of total sales in each category") +
+  xlab("Category") + ylab("Number of sales")
+#2
+# Create test data.
+group = c(superstore %>% distinct(Region))
+value = c(superstore %>% count(Region) %>% select(n))
+group <- as.character(unlist(group)) 
+value <- as.numeric(unlist(value)) 
+data <- data.frame(group,value)
+
+# Create bar plot
+bp <- ggplot(data, aes(x="", y=value, fill=group))+ geom_bar(width = 1, stat = "identity")
+# put bar plot to pie
+pie <- bp + coord_polar("y", start=0)
+pie
+
