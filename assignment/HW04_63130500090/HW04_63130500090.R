@@ -51,3 +51,9 @@ superstore %>% select(Product.Name,Sales) %>% filter(superstore$Sales == minsale
 
 #4.Find the total sales in 2018.
 superstore %>% mutate(year = year(dmy(superstore$Order.Date))) %>% filter(year==2018) %>% count() %>% rename(totalsales = n)
+
+#5.Find the total sales of each city. How much  can you sell?
+superstore %>% group_by(City) %>% summarise(sum(Sales)) %>% rename(Total_Amount = `sum(Sales)`)
+
+#6.Unique search for the first 10 customer names.
+superstore %>% distinct(Customer.Name) %>% head(10)
