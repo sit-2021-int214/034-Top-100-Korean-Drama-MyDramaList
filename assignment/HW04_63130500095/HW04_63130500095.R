@@ -13,7 +13,7 @@ View(Progbook)
 Glimpse(Progbook)
 
 # Part 2 Tidyverse
-
+Progbook %>% slice_max(Number_Of_Pages)
 
 # Part 3 
 # [1] หนังสือที่มีราคาน้อยที่สุด มีการรีวิวอยู่ที่เท่าไหร่
