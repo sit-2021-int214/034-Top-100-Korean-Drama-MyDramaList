@@ -33,7 +33,6 @@ Ha: μ > 20
  ```
  
 ## 3. Assign variable 
-
 ```
 n <- 100
 sd <- sd(kdrama $Number.of.Episode) //12.30788
@@ -42,17 +41,14 @@ u0 <- 20
 ```
 
 ## 4. Level of significance
-
 ``` alpha <- 0.05 ```
 
 ## 5. Test statistic
-
 ``` 
 z <- (xbar - u0) / (sd/sqrt(n));z //-0.3818691
 ```
 
 ## 6. Finding P-value approach or Critical Value approach
-
 ```
 # P-value approach
 pvalue <- pnorm(z); pvalue //0.3512792
@@ -61,22 +57,23 @@ pvalue <- pnorm(z); pvalue //0.3512792
 zalpha <- qnorm(alpha);zalpha //-1.644854
 ```
 
-## 7.Compare
-
+## 7. Compare
 ```
 # Using p-value approach
 if(pvalue<=alpha){
   print("Reject H0")
 }else{
   print("Accept H0")
-}
+}//Accept H0
 
 # Using critical value
 if(z<=zalpha){
   print("Reject H0")
 }else{
   print("Accept H0")
-}
+}//Accept H0
+```
+## 8. Conclusion
+```
 
-//Accept H0
 ```
