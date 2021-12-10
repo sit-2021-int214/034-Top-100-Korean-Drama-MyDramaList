@@ -1,4 +1,4 @@
-# 034-Top-100-Korean-Drama-MyDramaList
+# 034-Top-100-Korean-Drama-MyDramaList 🎞💌
 Datasets from: https://www.kaggle.com/chanoncharuchinda/top-100-korean-drama-mydramalist
 
 ![image](https://i.pinimg.com/originals/fa/4b/87/fa4b87e6717efec7d4fe4fa1d77da506.jpg)
