@@ -1,8 +1,6 @@
 # 🎬 Hypothesis testing 🎬
 ## from [034-Top-100-Korean-Drama-MyDramaList](./top100_kdrama_clean_AirOn_network.csv)
 
-is a method of statistical inference. An alternative hypothesis is proposed for the probability distribution of this data, either explicitly or only informally. The comparison of the two models is deemed statistically significant if, according to a threshold probability—the significance level—the data would be unlikely to occur if the null hypothesis were true.
-
 ## Overviews
 1. Explore data from [034-Top-100-Korean-Drama-MyDramaList](./top100_kdrama_clean_AirOn_network.csv)
 2. State the hypothesis
@@ -26,4 +24,4 @@ is a method of statistical inference. An alternative hypothesis is proposed for 
 8. Conclusion
 
 ## 1. Explore the Top 100 Korean Drama Dataset
-From the dataset, 
+From the dataset, We interesting about number of episode in this dataset.So, Hypothesis testing is a method of statistical inference. An alternative hypothesis is proposed for the probability distribution of this data.
