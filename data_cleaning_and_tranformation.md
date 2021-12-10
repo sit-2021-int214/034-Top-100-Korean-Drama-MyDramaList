@@ -1,11 +1,11 @@
-# ![clapperboard]<img src="](https://user-images.githubusercontent.com/68800999/145591871-e2a057ea-183e-46b9-aa7f-20135d007c90.png" width="48"> Data Cleaning and Data Transformation 
+# 🎬 Data Cleaning and Data Transformation 
 ## from Top100 Korean Drama Dataset
 
-## Overviews
+## 🎫 Overviews
 1. Explore the Top 100 Korean Drama Dataset
 2. Cleaning and Transformation dataset
 
-## 1. Explore the Top 100 Korean Drama Dataset
+## 🎫 1. Explore the Top 100 Korean Drama Dataset
 ### Our Steps
 1. Loading Library and dataset
 2. Explore the dataset
@@ -53,7 +53,7 @@ $ Tags              <chr> "Autism, Father-Son Relationship, Uncle-Nephew Relatio
 $ Rank              <chr> "#1", "#2", "#3", "#4", "#5", "#6", "#7", "#8", "#9", "#1~
 $ Rating            <dbl> 9.2, 9.1, 9.1, 9.1, 9.1, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.~
 ```
-## 2. Cleaning and Transformation dataset
+## 🎫 2. Cleaning and Transformation dataset
 ### Our Steps 
 1. Design and analyze to cleaning dataset
 2. Cleaning and Transformation dataset
