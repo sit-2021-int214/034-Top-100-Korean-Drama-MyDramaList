@@ -27,8 +27,8 @@
 From the dataset, We interesting about number of episode in this dataset.So, Hypothesis testing is a method of statistical inference. An alternative hypothesis is proposed for the probability distribution of this data.
 
 ## 2. State the hypothesis 
-`Ho: μ <= 20
- Ha: μ > 20`
+```Ho: μ <= 20
+ Ha: μ > 20```
  
 ## 3. Assign variable 
 
@@ -36,4 +36,24 @@ From the dataset, We interesting about number of episode in this dataset.So, Hyp
 sd <- sd(kdrama $Number.of.Episode) //12.30788
 xbar <- mean(kdrama $Number.of.Episode) //19.53
 u0 <- 20
+```
+
+## 4. Level of significance
+
+``` alpha <- 0.05 ```
+
+## 5. Test statistic
+
+``` 
+z <- (xbar - u0) / (sd/sqrt(n));z //-0.3818691
+```
+
+## 6. Finding P-value approach or Critical Value approach
+
+```
+# P-value approach
+pvalue <- pnorm(z); pvalue //0.3512792
+
+# Critical Value approach
+zalpha <- qnorm(alpha);zalpha //-1.644854
 ```
