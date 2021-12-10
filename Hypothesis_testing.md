@@ -31,9 +31,9 @@ From the dataset, We interesting about number of episode in this dataset.So, Hyp
  Ha: μ > 20`
  
 ## 3. Assign variable 
-`
-n <- 100
+
+```n <- 100
 sd <- sd(kdrama $Number.of.Episode) //12.30788
 xbar <- mean(kdrama $Number.of.Episode) //19.53
 u0 <- 20
-`
+```
