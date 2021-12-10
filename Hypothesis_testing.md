@@ -28,6 +28,7 @@ From the dataset, We interesting about number of episode in this dataset.So, Hyp
 
 ## 2. State the hypothesis 
 `Ho: μ <= 20`
+
 `Ha: μ > 20`
 
 
