@@ -33,11 +33,13 @@ This dataset about ranking top 100 of Korean drama which collected from 2003 - 2
 ## Tools
 - R Studio
 - Google Studio
+- Power BI
 
 ## Table of Contents
 - [Data Cleaning and Data Transformation](data_cleaning_and_tranformation.md)
 - [Data Analysis with Descriptive Statistics](Data_Analysis_with_Descriptive_Statistics.md)
 - [Data Visualization](https://app.powerbi.com/view?r=eyJrIjoiMDQxMzI5NDgtZjY0MS00MTc3LTk0NDQtMGVmYzJkYmJkOGFiIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
+- [Hypothesis Testing]()
 
 ## Resources
 - [top100_kdrama.csv](./top100_kdrama.csv) : Original Dataset
