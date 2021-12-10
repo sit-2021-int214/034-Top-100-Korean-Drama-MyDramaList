@@ -25,3 +25,9 @@
 
 ## 1. Explore the Top 100 Korean Drama Dataset
 From the dataset, We interesting about number of episode in this dataset.So, Hypothesis testing is a method of statistical inference. An alternative hypothesis is proposed for the probability distribution of this data.
+
+## 2. State the hypothesis 
+`Ho: μ <= 20
+ Ha: μ > 20`
+
+
