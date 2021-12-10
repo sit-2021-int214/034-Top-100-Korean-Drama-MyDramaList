@@ -12,9 +12,9 @@
    - alpha α (default is 0.05)
 4. Select Level of significance (alpha α)
 5. Select Test statistic (This formula for one population)
-   - z/t <- (xbar - u0) / (sd/sqrt(n))
-   - z <- (pbar-p0) / sqrt((p0\*(1-p0))/n)
-6. Finding P-value approach or Critical Value approach
+   - ```z/t <- (xbar - u0) / (sd/sqrt(n))```
+   - ```z <- (pbar-p0) / sqrt((p0\*(1-p0))/n)```
+6. Finding P-value approach or Critical Value approach by
    - P-value for Z: `pvalue <- pnorm(z)`
    - Critical Value for Z: `zalpha <- qnorm(alpha)`
    or
@@ -35,8 +35,8 @@ Ha: μ > 20
 ## 3. Assign variable 
 ```
 n <- 100
-sd <- sd(kdrama $Number.of.Episode) //12.30788
-xbar <- mean(kdrama $Number.of.Episode) //19.53
+sd <- sd(kdrama $Number.of.Episode) // 12.30788
+xbar <- mean(kdrama $Number.of.Episode) // 19.53
 u0 <- 20
 ```
 
@@ -45,16 +45,16 @@ u0 <- 20
 
 ## 5. Test statistic
 ``` 
-z <- (xbar - u0) / (sd/sqrt(n));z //-0.3818691
+z <- (xbar - u0) / (sd/sqrt(n));z // -0.3818691
 ```
 
 ## 6. Finding P-value approach or Critical Value approach
 ```
 # P-value approach
-pvalue <- pnorm(z); pvalue //0.3512792
+pvalue <- pnorm(z); pvalue // 0.3512792
 
 # Critical Value approach
-zalpha <- qnorm(alpha);zalpha //-1.644854
+zalpha <- qnorm(alpha);zalpha // -1.644854
 ```
 
 ## 7. Compare
@@ -64,16 +64,19 @@ if(pvalue<=alpha){
   print("Reject H0")
 }else{
   print("Accept H0")
-}//Accept H0
+} // Accept H0
 
 # Using critical value
 if(z<=zalpha){
   print("Reject H0")
 }else{
   print("Accept H0")
-}//Accept H0
+} // Accept H0
 ```
 ## 8. Conclusion
 ```
-After the Hypothesis It can be concluded that we accept Ho as mean <= 20. Because we compare the p-value with alpha, we see that the p-value is greater than alpha. Comparing the critical value between z and z alpha, we see that z alpha. is greater than z, both methods give the same value: Accept Ho
+After the Hypothesis It can be concluded that we accept Ho as mean <= 20. 
+Because we compare the p-value with alpha, we see that the p-value is greater than alpha. 
+Comparing the critical value between z and z alpha, we see that z alpha. is greater than z, 
+both methods give the same value: Accept Ho
 ```
