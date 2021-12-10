@@ -29,6 +29,7 @@ This dataset about ranking top 100 of Korean drama which collected from 2003 - 2
 1. Explore the Top 100 Korean Drama Dataset
 2. Data Cleaning and Data Transformation
 3. Data Analysis with Descriptive Statistics
+4. Hypothesis Testing 
 
 ## Tools
 - R Studio
