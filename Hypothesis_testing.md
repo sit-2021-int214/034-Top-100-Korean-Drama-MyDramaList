@@ -75,5 +75,5 @@ if(z<=zalpha){
 ```
 ## 8. Conclusion
 ```
-
+After the Hypothesis It can be concluded that we accept Ho as mean <= 20. Because we compare the p-value with alpha, we see that the p-value is greater than alpha. Comparing the critical value between z and z alpha, we see that z alpha. is greater than z, both methods give the same value: Accept Ho
 ```
